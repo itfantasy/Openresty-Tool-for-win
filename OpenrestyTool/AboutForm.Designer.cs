@@ -72,9 +72,9 @@
             this.label3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(397, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 20);
+            this.label3.Size = new System.Drawing.Size(151, 20);
             this.label3.TabIndex = 3;
-            this.label3.Text = "568537658@qq.com";
+            this.label3.Text = "kenkao_01@126.com";
             // 
             // AboutForm
             // 

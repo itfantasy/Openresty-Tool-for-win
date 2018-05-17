@@ -22,6 +22,14 @@ namespace OpenrestyTool
             }
         }
 
+        string luaPath
+        {
+            get
+            {
+                return OS.exePath + "lua\\";
+            }
+        }
+
         string logPath
         {
             get
@@ -103,6 +111,11 @@ namespace OpenrestyTool
             OS.ExeFile(confPath);
         }
 
+        private void lusMenuItem_Click(object sender, EventArgs e)
+        {
+            OS.ExeFile(luaPath);
+        }
+
         private void clearLogMenuItem_Click(object sender, EventArgs e)
         {
             if (!OS.CheckProcessExist("nginx"))
@@ -175,5 +188,7 @@ namespace OpenrestyTool
                 OS.Execute("nginx");
             }).Start();
         }
+
+        
     }
 }

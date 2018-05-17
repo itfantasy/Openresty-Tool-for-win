@@ -36,13 +36,15 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.startServerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopServerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.打开LuaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configServerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.showLogMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearLogMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restartMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +63,8 @@
             this.startServerMenuItem,
             this.stopServerMenuItem,
             this.restartMenuItem,
+            this.toolStripSeparator4,
+            this.打开LuaToolStripMenuItem,
             this.configServerMenuItem,
             this.toolStripSeparator2,
             this.showLogMenuItem,
@@ -68,78 +72,90 @@
             this.toolStripSeparator3,
             this.exitMenuItem});
             this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(153, 220);
+            this.mainMenuStrip.Size = new System.Drawing.Size(181, 248);
             // 
             // aboutMenuItem
             // 
             this.aboutMenuItem.Name = "aboutMenuItem";
-            this.aboutMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutMenuItem.Text = "关 于";
             this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // startServerMenuItem
             // 
             this.startServerMenuItem.Name = "startServerMenuItem";
-            this.startServerMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startServerMenuItem.Size = new System.Drawing.Size(180, 22);
             this.startServerMenuItem.Text = "启动 Nginx";
             this.startServerMenuItem.Click += new System.EventHandler(this.startServerMenuItem_Click);
             // 
             // stopServerMenuItem
             // 
             this.stopServerMenuItem.Name = "stopServerMenuItem";
-            this.stopServerMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.stopServerMenuItem.Size = new System.Drawing.Size(180, 22);
             this.stopServerMenuItem.Text = "关停 Nginx";
             this.stopServerMenuItem.Click += new System.EventHandler(this.stopServerMenuItem_Click);
+            // 
+            // restartMenuItem
+            // 
+            this.restartMenuItem.Name = "restartMenuItem";
+            this.restartMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restartMenuItem.Text = "重启 Nginx";
+            this.restartMenuItem.Click += new System.EventHandler(this.restartMenuItem_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            // 
+            // 打开LuaToolStripMenuItem
+            // 
+            this.打开LuaToolStripMenuItem.Name = "打开LuaToolStripMenuItem";
+            this.打开LuaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.打开LuaToolStripMenuItem.Text = "打开Lua目录";
+            this.打开LuaToolStripMenuItem.Click += new System.EventHandler(this.lusMenuItem_Click);
             // 
             // configServerMenuItem
             // 
             this.configServerMenuItem.Name = "configServerMenuItem";
-            this.configServerMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.configServerMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configServerMenuItem.Text = "打开配置目录";
             this.configServerMenuItem.Click += new System.EventHandler(this.configServerMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // showLogMenuItem
             // 
             this.showLogMenuItem.Name = "showLogMenuItem";
-            this.showLogMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.showLogMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showLogMenuItem.Text = "查看日志";
             this.showLogMenuItem.Click += new System.EventHandler(this.showLogMenuItem_Click);
             // 
             // clearLogMenuItem
             // 
             this.clearLogMenuItem.Name = "clearLogMenuItem";
-            this.clearLogMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clearLogMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clearLogMenuItem.Text = "清空日志";
             this.clearLogMenuItem.Click += new System.EventHandler(this.clearLogMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitMenuItem.Text = "退 出";
             this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
-            // 
-            // restartMenuItem
-            // 
-            this.restartMenuItem.Name = "restartMenuItem";
-            this.restartMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.restartMenuItem.Text = "重启 Nginx";
-            this.restartMenuItem.Click += new System.EventHandler(this.restartMenuItem_Click);
             // 
             // MainForm
             // 
@@ -171,6 +187,8 @@
         private System.Windows.Forms.ToolStripMenuItem configServerMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearLogMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restartMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem 打开LuaToolStripMenuItem;
     }
 }
 

@@ -76,7 +76,8 @@ namespace OpenrestyTool
         {
             new Thread(() =>
             {
-                OS.Execute("nginx -s quit");
+                //OS.Execute("nginx -s quit");
+                OS.Execute("taskkill /im nginx.exe /f");
                 int count = 0;
                 while (true)
                 {
@@ -147,7 +148,8 @@ namespace OpenrestyTool
         {
             if (OS.CheckProcessExist("nginx"))
             {
-                OS.Execute("nginx -s quit");
+                //OS.Execute("nginx -s quit");
+                OS.Execute("taskkill /im nginx.exe /f");
             }
             startNginxService(1);
         }
